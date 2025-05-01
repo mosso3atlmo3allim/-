@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>༊෴✿موسوعة المعلم✿〄࿐</title>
+    <style>
+       body {
+            background-color: #f5deb3; /* بني فاتح */
+            font-family: Arial, sans-serif;
+            font-size: 55%;
+            font-weight: bold;
+            direction: rtl;
+            overflow: hidden;
+            margin: 0;
+        }
+        h1 {
+            color: rgba(24, 1, 1, 0.918);
+            text-align: center;
+            padding: 15px;
+            font-size: 50px; /* حجم خط كبير */
+            animation: move 5s linear infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: rotate(10deg) translateX(10px); }
+            100% { transform: rotate(-10deg) translateX(-10px); }
+        }
+        .welcome-message {
+            color: rgb(121, 34, 34);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 10s linear infinite alternate;
+            font-size: 22px; /* حجم خط كبير */
+            text-align: center;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(1%); }
+            100% { transform: translateX(-10%); }
+        }
+        .nav {
+            font-size: 22px; /* حجم خط كبير */
+            background-color: rgb(226, 223, 61);
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end; 
+        }
+        .nav div {
+            color: rgb(236, 7, 7);
+            margin: 5px;
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        .divider {
+            height: 10px;
+            background-color: rgb(29, 26, 26);
+            margin: 20px 0;
+        }    
+        .frames {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .frame {
+            flex: 1;
+            margin: 0 5px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            font-size: 28px;
+        }
+        .frame button {
+            background-color: rgb(45, 199, 176);
+            color: rgb(7, 7, 7);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .table-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            width: 2cm;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        a {
+            height: 10px;
+            background-color: rgb(231, 238, 237);
+            margin: 20px 0;
+            font-size: 28px; 
+        }  
+        .button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: rgb(223, 28, 28);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button.clicked {
+            background-color: rgb(15, 11, 230); /* اللون عند النقر */
+        }
+    </style>
+</head>
+<body>  
+    <h1>༊෴✿موسوعة المعلم✿〄࿐</h1>
+
+    <div class="welcome-message">
+        <h2>مرحبا بجميع الأساتذة الكرام، موقعنا يوفر كل ما تحتاجه في عملك . تَصَفَّحْ بالأسفل   👇👇👇
+    </div>
+    </div>
+    <div class=" button">
+<button  onclick="openNewPage()"> الرئيسية </button>  
+<script>
+    function openNewPage() {
+        window.open('https://www.youtube.com', '_blank');
+    }
+</script>
+<button  onclick="openPage()"> سجل دخولك</button>
+<script>
+    function openPage() {
+        window.open('https://www.instagram.com', '_blank');
+    }
+</script>
+        <button  onclick="openPage2()">تواصل معنا </button>  
+        <script>
+            function openPage2() {
+                window.open('https://www.facebook.com', '_blank');
+            }
+        </script> 
+    </div><br><br><br><br>
+    <div class="divider"></div>
+    <div class="frames">
+        <div class="frame" style="background-color: #4682b4;">
+            <div>جذاذات</div>
+            <button onclick="toggleTable('table3')">اضغط هنا ☝☝ </button>
+            <div class="table-container" id="table3">
+                <table>
+                    <tr>
+                        <th>المستوى الأول</th>
+                        <th>المستوى الثاني</th>
+                        <th>المستوى الثالث</th>
+                        <th>المستوى الرابع</th>
+                        <th>المستوى الخامس</th>
+                        <th>المستوى السادس</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="frame" style="background-color: #32cd32;">
+            <div> توازيع</div>
+            <button onclick="toggleTable('table1')">اضغط هنا ☝☝ </button>
+            <div class="table-container" id="table1">
+                <table>
+                    <tr>
+                        <th>المستوى الأول</th>
+                        <th>المستوى الثاني</th>
+                        <th>المستوى الثالث</th>
+                        <th>المستوى الرابع</th>
+                        <th>المستوى الخامس</th>
+                        <th>المستوى السادس</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="frame" style="background-color: #ffa500;">
+            <div>  ملف الوثائق التربوية </div>
+            <button onclick="toggleTable('table5')">اضغط هنا ☝☝ </button>
+            <div class="table-container" id="table5">
+                <table>
+                    <tr>
+                        <th> استعمال الزمن</th>
+                        <th> ميثاق القسم</th>
+                        <th> ملف الغياب</th>
+                        <th> لائحة العطل</th>
+                        <th> محضر تأسيس تعاونية القسم</th>
+                        <th> أنشطة الحياة المدرسية</th>
+                        <th> النشيد الوطي</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="frame" style="background-color: #ff4500;">
+            <div>التقويمات و تقاريرها</div>
+            <button onclick="toggleTable('table4')">اضغط هنا ☝☝ </button>
+            <div class="table-container" id="table4">
+                <table>
+                    <tr>
+                        <th> روائز التقويم التشخيصي وتقريره  </th>
+                        <th> تقويم أثر الدعم</th>
+                        <th>  خطة الدعم التربوي</th>
+                        <th> تقويم ودعم الوحدات الدراسية</th>
+                        <th> التقويم السنوي العام</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="frame" style="background-color: #6a5acd;">
+            <div>نماذج  الفروض لجميع المستويات</div>
+            <button onclick="toggleTable('table2')">اضغط هنا ☝☝ </button>
+            <div class="table-container" id="table2">
+                <table>
+                    <tr>
+                        <th>المستوى الأول</th>
+                        <th>المستوى الثاني</th>
+                        <th>المستوى الثالث</th>
+                        <th>المستوى الرابع</th>
+                        <th>المستوى الخامس</th>
+                        <th>المستوى السادس</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="frame" style="background-color: #8b0000;">
+            <div>مستجدات التعليم</div>
+            <button onclick="toggleTable('table6')">اضغط هنا ☝☝ </button>
+    </div>
+    <script>
+        function toggleTable(tableId) {
+            const tables = document.querySelectorAll('.table-container');
+            tables.forEach(table => {
+                if (table.id !== tableId) {
+                    table.style.display = 'none';
+                }
+            });
+            const selectedTable = document.getElementById(tableId);
+            selectedTable.style.display = selectedTable.style.display === 'none' || selectedTable.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</div>
+<br><br>
+<body>
+<a>
+<pre>     لتحميل نموذج بحث تدخلي اضغط أسفله 👇 👇 </pre>    
+</a>
+</body>                      
+<pre>                 <a href="البحث التدخلي  إرساء تدريس مشروع الوحدة توفيق نظيري فوج 2020 (1).pdf" download>اضغط هنا </a></pre>
+</body>   
+</html>
+
